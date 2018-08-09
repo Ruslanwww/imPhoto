@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Leckerli+One');
 $display4-size: 2.5rem;
 $jumbotron-bg: rgba(255,255,255, 0.7);
+$card-cap-bg: rgba(255,255,255, 0.75);
+$card-bg: rgba(255,255,255, 0.7);
 @import "bootstrap";
 
 .container-background{
@@ -38,4 +40,10 @@ $jumbotron-bg: rgba(255,255,255, 0.7);
 
 .landing-text-logo{
   font-size: 2rem;
+}
+
+.devise-form{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
