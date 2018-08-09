@@ -2,14 +2,14 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-      <%= link_to 'imPhoto', root_path, class: 'navbar-brand' %>
+      <%= link_to 'imPhoto', root_path, class: 'navbar-brand text-logo' %>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto mr-4 mt-2 mt-lg-0 a">
+        <ul class="navbar-nav ml-auto mr-4 mt-2 mt-lg-0">
           <li class="nav-item">
             <%= link_to 'О проекте', pages_about_path, class: 'nav-link' %>
           </li>
@@ -23,13 +23,25 @@
 
 <% else %>
 
-  <ul class="nav">
-    <li class="nav-item">
-      <%= link_to 'imPhoto', root_path, class: 'nav-link nav-landing' %>
-    </li>
-    <li class="nav-item">
-      <%= link_to 'О проекте', pages_about_path, class: 'nav-link nav-landing' %>
-    </li>
-  </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <%= link_to 'imPhoto', root_path, class: 'navbar-brand text-logo landing-text-logo' %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mr-4 mt-2 mt-lg-0">
+          <li class="nav-item">
+            <%= link_to 'О проекте', pages_about_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Войти', new_user_session_path, class: 'nav-link' %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 <% end %>
