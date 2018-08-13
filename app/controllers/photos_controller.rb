@@ -42,7 +42,7 @@ class PhotosController < ApplicationController
   private
     def owner
       @photo = current_user.photos.find_by(id: params[:id])
-      redirect_to photos_path, notice: 'У вас нет разрешения на изменение этой фотографии' if @photos.nil?
+      redirect_to photos_path, notice: 'У вас нет разрешения на изменение этой фотографии' if @photo.nil?
     end
 
     def set_photo
