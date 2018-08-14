@@ -3,6 +3,7 @@ $display4-size: 2.5rem;
 $jumbotron-bg: rgba(255,255,255, 0.7);
 $card-cap-bg: rgba(255,255,255, 0.75);
 $card-bg: rgba(255,255,255, 0.7);
+$body-bg: #DADFE1;
 @import "bootstrap";
 
 .container-background{
@@ -31,6 +32,7 @@ $card-bg: rgba(255,255,255, 0.7);
 .container-login{
   padding-left: 0;
   padding-right: 0;
+  text-align: center;
 }
 
 .text-logo{
@@ -49,12 +51,8 @@ $card-bg: rgba(255,255,255, 0.7);
 }
 
 .photo-form{
-  width: 50%;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.bg-grey{
-  background-color: #DADFE1;
-  height: 100vh;
+  text-align: left;
 }
