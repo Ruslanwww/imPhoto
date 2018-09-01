@@ -95,6 +95,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'https://imphoto-rails.herokuapp.com/' }
 
   config.paperclip_defaults = {
+  s3_host_name: "s3.#{ENV.fetch('AWS_REGION')}.amazonaws.com",
   storage: :s3,
   s3_credentials: {
     bucket: ENV.fetch('S3_BUCKET_NAME'),
