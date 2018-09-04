@@ -1,4 +1,11 @@
-<%= @user.email %>
+<%= @user.email %><br>
+<% unless current_user.id == @user.id %>
+  <% if current_user.subscriptions.exists?(friend_id: @user.id) %>
+    <%= link_to 'Отписаться', unsubscribe_profile_path(@user) %>
+  <% else %>
+    <%= link_to 'Подписаться', subscribe_profile_path(@user) %>
+  <% end %>
+<% end %>
 
 <br>
 
